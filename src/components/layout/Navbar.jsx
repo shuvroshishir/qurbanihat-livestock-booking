@@ -23,9 +23,9 @@ const Navbar = () => {
                         {NavLinks}
                     </ul>
                 </div>
-                <div className="flex items-center text-xl">
-                    <img src='/images/cow-logo.png' alt="logo" height={40} width={40} />
-                    <p className="text-(--neutral) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></p>
+                <div className="flex items-center text-2xl">
+                    <img src='/images/cow-logo.png' alt="logo" height={50} width={50} />
+                    <Link href={'/'} className="text-(--neutral) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></Link>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -33,7 +33,7 @@ const Navbar = () => {
                     {NavLinks}
                 </ul>
             </div>
-            <div className="navbar-end gap-1">
+            <div className="navbar-end gap-2">
                 <Link href='/register'><Button className='bg-(--secondary) text-white'>Login</Button></Link>
                 <Link href='/register'><Button className='bg-(--primary) text-white'>Register</Button></Link>
             </div>

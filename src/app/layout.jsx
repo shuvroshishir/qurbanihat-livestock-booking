@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </header>
 
-        <main className="min-h-screen bg-[#F9F7F5] ">
+        <main className="min-h-screen bg-[#F9F7F5] pt-10 pb-20">
           {children}
         </main>
 

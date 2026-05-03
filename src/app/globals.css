@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
 @import "tailwindcss";
 @import "@heroui/styles";
 @plugin "daisyui";
@@ -14,11 +12,7 @@
 
   --accent: #FFF8F6;
 
-  --neutral: #4f4c4a;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
+  --neutral: #4b4a4a;
 }
 
 
