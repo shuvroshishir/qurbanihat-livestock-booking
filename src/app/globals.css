@@ -2,11 +2,19 @@
 
 @import "tailwindcss";
 @import "@heroui/styles";
+@plugin "daisyui";
+
 
 :root {
-  --primary: #244D3F;
-  --secondary: #1F2937;
-  --neutral: #64748B;
+  --primary: #4B2C20;
+  --primary-light: #E8D8CF;
+
+  --secondary: #064E3B;
+  --secondary-light: #D1FAE5;
+
+  --accent: #FFF8F6;
+
+  --neutral: #4f4c4a;
 }
 
 body {
