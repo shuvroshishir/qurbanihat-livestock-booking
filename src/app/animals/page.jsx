@@ -2,9 +2,9 @@ import React from 'react';
 
 const Animals = () => {
     return (
-        <div>
+        <section className='Animals container mx-auto bg-white'>
             Animals
-        </div>
+        </section>
     );
 };
 
