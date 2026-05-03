@@ -38,7 +38,7 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/" className="hover:text-tertiary">Home</Link></li>
                             <li><Link href="/animals" className="hover:text-tertiary">All Animals</Link></li>
-                            <li><Link href="/tips" className="hover:text-tertiary">Qurbani Tips</Link></li>
+                            <li><Link href="#lip" className="hover:text-tertiary">Qurbani Tips</Link></li>
                             <li><Link href="/about" className="hover:text-tertiary">About Us</Link></li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/50">
+                <div className="mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/70">
                     <p>&copy; QurbaniHat. All rights reserved by Shishir.</p>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center text-2xl">
                     <img src='/images/cow-logo.png' alt="logo" height={50} width={50} />
-                    <Link href={'/'} className="text-(--neutral) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></Link>
+                    <Link href={'/'} className="text-(--primary) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></Link>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

@@ -33,11 +33,11 @@ export default function RootLayout({ children }) {
       className={`${poppins.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col ">
-        <header className="shadow-sm bg-white/20 backdrop-blur-md border border-white/30 sticky top-0 z-50 ">
+        <header className="shadow-sm bg-white/20 backdrop-blur-md border border-white/30 sticky top-0 z-50">
           <Navbar />
         </header>
 
-        <main className="min-h-screen bg-[#F9F7F5] pt-5 pb-20">
+        <main className="min-h-screen bg-[#F9F7F5] pb-20">
           {children}
         </main>
 
