@@ -25,17 +25,17 @@ const tipsData = [
 
 const Tips = () => {
     return (
-        <section className="Tips py-20 bg-[#1c3433] text-white">
+        <section id='tip' className="Tips py-20 bg-[#1c3433] text-white">
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                        Qurbani Preparation Tips
+                        Tips for a Blessed Qurbani
                     </h2>
-                    <p className="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base">
-                        Expert advice on choosing, caring for, and performing Qurbani properly.
+                    <p className="text-stone-300 max-w-4xl mx-auto text-sm sm:text-base">
+                        Everything you need to know about performing your sacrifice with professionalism and piety.
                     </p>
                 </div>
 
