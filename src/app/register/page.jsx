@@ -1,23 +1,33 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import toast from "react-hot-toast";
+import { authClient } from "@/lib/auth-client";
 
 const Register = () => {
-    const [form, setForm] = useState({
-        name: "",
-        email: "",
-        password: "",
-    });
 
-    const handleChange = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
-    };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert("Registration Successful 🎉");
+        const formData = new FormData(e.currentTarget);
+        const userData = Object.fromEntries(formData.entries());
+
+        const { data, error } = await authClient.signUp.email({
+            name: userData.name,
+            email: userData.email,
+            password: userData.password,
+            image: userData.image,
+        });
+
+        console.log({ data, error });
+
+        if (error) {
+            toast(`Signup failed: ${error.message}`);
+            return;
+        }
+
+        toast("Registration Successful 🎉");
     };
 
     return (
@@ -50,8 +60,14 @@ const Register = () => {
                             type="text"
                             name="name"
                             placeholder="Full Name"
-                            value={form.name}
-                            onChange={handleChange}
+                            required
+                            className="w-full border border-black/10 px-4 py-2 rounded-md"
+                        />
+
+                        <input
+                            type="text"
+                            name="image"
+                            placeholder="Image URL"
                             required
                             className="w-full border border-black/10 px-4 py-2 rounded-md"
                         />
@@ -60,8 +76,6 @@ const Register = () => {
                             type="email"
                             name="email"
                             placeholder="Email"
-                            value={form.email}
-                            onChange={handleChange}
                             required
                             className="w-full border border-black/10 px-4 py-2 rounded-md"
                         />
@@ -70,16 +84,17 @@ const Register = () => {
                             type="password"
                             name="password"
                             placeholder="Password"
-                            value={form.password}
-                            onChange={handleChange}
                             required
                             className="w-full border border-black/10 px-4 py-2 rounded-md"
                         />
 
-                        <button className="w-full bg-(--secondary) text-white py-2 rounded-md flex items-center justify-center gap-2">
+                        <button
+                            type="submit"
+                            className="w-full bg-(--secondary) text-white py-2 rounded-md flex items-center justify-center gap-2">
                             Register <FaArrowRight />
                         </button>
                     </form>
+
                     <div className="mt-6">
 
                         {/* Divider */}
@@ -105,6 +120,7 @@ const Register = () => {
                         </button>
 
                     </div>
+
                     <p className="mt-6 text-sm text-center">
                         Already have an account?{" "}
                         <Link href="/login" className="text-(--secondary) font-semibold">
