@@ -12,7 +12,6 @@ const Navbar = () => {
 
     const userData = authClient.useSession();
     const user = userData.data?.user;
-    console.log(user);
 
     const handleSignout = async () => {
         await authClient.signOut({
@@ -43,10 +42,12 @@ const Navbar = () => {
                         {NavLinks}
                     </ul>
                 </div>
-                <div className="flex items-center text-2xl">
-                    <img src='/images/cow-logo.png' alt="logo" height={50} width={50} />
-                    <Link href={'/'} className="text-(--primary) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></Link>
-                </div>
+                <Link href={'/'}>
+                    <div className="flex items-center text-2xl">
+                        <img src='/images/cow-logo.png' alt="logo" height={50} width={50} />
+                        <p className="text-(--primary) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></p>
+                    </div>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -63,10 +64,12 @@ const Navbar = () => {
 
             {user &&
                 <div className="navbar-end gap-2">
-                    <Avatar>
-                        <Avatar.Image alt={user?.name} src={user?.image} referrerPolicy="no-referrer" />
-                        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-                    </Avatar>
+                    <Link href='/profile'>
+                        <Avatar>
+                            <Avatar.Image alt={user?.name} src={user?.image} referrerPolicy="no-referrer" />
+                            <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                        </Avatar>
+                    </Link>
                     <Button
                         onClick={handleSignout}
                         variant="danger-soft">
