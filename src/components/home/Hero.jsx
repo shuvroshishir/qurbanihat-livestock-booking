@@ -30,10 +30,10 @@ const Hero = () => {
                         </Link>
 
                         <Link
-                            href="/"
+                            href="#about"
                             className="flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-full border-2 border-slate-500 text-slate-700 hover:bg-slate-100 transition"
                         >
-                            Learn More
+                            About Us
                             <FaArrowRight />
                         </Link>
 
