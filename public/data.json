@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "name": "Deshi Shahi Cow",
+        "name": "Sahiwal Bull",
         "type": "Cow",
-        "breed": "Local Deshi",
-        "price": 120000,
-        "weight": 280,
-        "age": 3,
-        "location": "Bogura",
-        "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-        "image": "https://i.postimg.cc/8zjvYx0M/cow1.jpg",
+        "breed": "Sahiwal",
+        "price": 200000,
+        "weight": 400,
+        "age": 5,
+        "location": "Dinajpur",
+        "description": "Premium Sahiwal bull with strong muscles and ভালো যত্নে পালন করা হয়েছে.",
+        "image": "/images/animals/cows/1.jpg",
         "category": "Large Animal"
     },
     {
@@ -22,7 +22,7 @@
         "age": 4,
         "location": "Sirajganj",
         "description": "High-quality Friesian cow with excellent health and strong body.",
-        "image": "https://i.postimg.cc/Friesian-cow.jpg",
+        "image": "/images/animals/cows/2.jpg",
         "category": "Large Animal"
     },
     {
@@ -35,24 +35,11 @@
         "age": 2,
         "location": "Rajshahi",
         "description": "Popular Black Bengal goat known for tender meat and high demand.",
-        "image": "https://i.postimg.cc/black-bengal-goat.jpg",
+        "image": "/images/animals/goats/6.jpg",
         "category": "Small Animal"
     },
     {
         "id": 4,
-        "name": "Jamunapari Goat",
-        "type": "Goat",
-        "breed": "Jamunapari",
-        "price": 40000,
-        "weight": 45,
-        "age": 2.5,
-        "location": "Tangail",
-        "description": "Large-sized Jamunapari goat with strong build and ভালো স্বাস্থ্য.",
-        "image": "https://i.postimg.cc/jamunapari-goat.jpg",
-        "category": "Small Animal"
-    },
-    {
-        "id": 5,
         "name": "Deshi Sheep",
         "type": "Sheep",
         "breed": "Local",
@@ -61,20 +48,33 @@
         "age": 2,
         "location": "Mymensingh",
         "description": "Healthy sheep suitable for Qurbani, raised in natural পরিবেশ.",
-        "image": "https://i.postimg.cc/deshi-sheep.jpg",
+        "image": "/images/animals/goats/1.jpg",
         "category": "Small Animal"
     },
     {
-        "id": 6,
-        "name": "Sahiwal Bull",
+        "id": 5,
+        "name": "Deshi Shahi Cow",
         "type": "Cow",
-        "breed": "Sahiwal",
-        "price": 200000,
-        "weight": 400,
-        "age": 5,
-        "location": "Dinajpur",
-        "description": "Premium Sahiwal bull with strong muscles and ভালো যত্নে পালন করা হয়েছে.",
-        "image": "https://i.postimg.cc/sahiwal-bull.jpg",
+        "breed": "Local Deshi",
+        "price": 120000,
+        "weight": 280,
+        "age": 3,
+        "location": "Bogura",
+        "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+        "image": "/images/animals/cows/4.jpg",
         "category": "Large Animal"
+    },
+    {
+        "id": 6,
+        "name": "Jamunapari Goat",
+        "type": "Goat",
+        "breed": "Jamunapari",
+        "price": 40000,
+        "weight": 45,
+        "age": 2.5,
+        "location": "Tangail",
+        "description": "Large-sized Jamunapari goat with strong build and ভালো স্বাস্থ্য.",
+        "image": "/images/animals/goats/7.jpg",
+        "category": "Small Animal"
     }
 ]

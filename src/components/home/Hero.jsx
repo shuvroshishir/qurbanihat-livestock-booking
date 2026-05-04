@@ -3,7 +3,7 @@ import { FaShoppingBag, FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="Hero px-4 py-4 sm:px-12  sm:py-20 bg-[#FAF3E0]">
+        <section className="Hero px-4 py-5 sm:px-12  sm:py-20 bg-[#FAF3E0]">
             <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">
 
                 {/* Left Content */}

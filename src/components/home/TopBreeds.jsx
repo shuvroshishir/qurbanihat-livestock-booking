@@ -35,7 +35,7 @@ const breeds = [
 
 const TopBreeds = () => {
     return (
-        <section className="py-20 bg-slate-50">
+        <section className="TopBreeds py-10 sm:py-20 bg-slate-50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header */}

@@ -25,7 +25,7 @@ const tipsData = [
 
 const Tips = () => {
     return (
-        <section id='tip' className="Tips py-20 bg-[#1c3433] text-white">
+        <section id='tip' className="Tips py-10 sm:py-20 bg-[#1c3433] text-white">
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
