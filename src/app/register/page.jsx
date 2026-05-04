@@ -30,7 +30,7 @@ const Register = () => {
         }
 
         toast("Registration Successful 🎉");
-        router.push('/')
+        router.push('/login')
     };
 
     const googleLogin = async () => {

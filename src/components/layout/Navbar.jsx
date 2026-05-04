@@ -1,9 +1,29 @@
-import { Button } from "@heroui/react";
+"use client"
+
+import { authClient } from "@/lib/auth-client";
+import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
+    const router = useRouter();
+
+    const userData = authClient.useSession();
+    const user = userData.data?.user;
+    console.log(user);
+
+    const handleSignout = async () => {
+        await authClient.signOut({
+            fetchOptions: {
+                onSuccess: () => {
+                    router.push("/"); // redirect to login page
+                },
+            },
+        });
+    }
+
     const NavLinks =
         <>
             <li><Link href='/'>Home</Link></li>
@@ -33,10 +53,27 @@ const Navbar = () => {
                     {NavLinks}
                 </ul>
             </div>
-            <div className="navbar-end gap-2">
-                <Link href='/login'><Button className='bg-(--secondary) text-white'>Login</Button></Link>
-                <Link href='/register'><Button className='bg-(--primary) text-white'>Register</Button></Link>
-            </div>
+
+            {!user &&
+                <div className="navbar-end gap-2">
+                    <Link href='/login'><Button className='bg-(--secondary) text-white'>Login</Button></Link>
+                    <Link href='/register'><Button className='bg-(--primary) text-white'>Register</Button></Link>
+                </div>
+            }
+
+            {user &&
+                <div className="navbar-end gap-2">
+                    <Avatar>
+                        <Avatar.Image alt={user?.name} src={user?.image} referrerPolicy="no-referrer" />
+                        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                    </Avatar>
+                    <Button
+                        onClick={handleSignout}
+                        variant="danger-soft">
+                        SignOut
+                    </Button>
+                </div>
+            }
         </nav>
     );
 };
