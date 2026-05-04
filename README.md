@@ -10,7 +10,7 @@ The platform focuses on a clean UI, smooth user experience, and essential bookin
 
 ## 🌐 Live Website
 
-🔗 https://your-live-link.vercel.app
+🔗 https://qurbanihat-livestock-booking.vercel.app/
 
 ---
 
@@ -98,86 +98,7 @@ This project was built as part of Assignment 8 to demonstrate:
 ### Packages
 
 - react-hot-toast
-- react-firebase-hooks
 - animate.css (or Lottie)
-
----
-
-## 📁 Project Structure
-
-```
-src/
- ├── app/
- ├── components/
- ├── data/
- ├── hooks/
- ├── lib/
- ├── providers/
- └── utils/
-```
-
----
-
-## 🔑 Environment Variables
-
-Create a `.env.local` file and add:
-
-```
-NEXT_PUBLIC_API_KEY=your_api_key
-NEXT_PUBLIC_AUTH_DOMAIN=your_auth_domain
-NEXT_PUBLIC_PROJECT_ID=your_project_id
-NEXT_PUBLIC_STORAGE_BUCKET=your_bucket
-NEXT_PUBLIC_MESSAGING_SENDER_ID=your_sender_id
-NEXT_PUBLIC_APP_ID=your_app_id
-```
-
----
-
-## ⚡ Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/qurbanihat.git
-
-# Navigate to project folder
-cd qurbanihat
-
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
-```
-
----
-
-## 📦 Deployment
-
-This project is deployed on Vercel.
-
-Steps:
-
-1. Push code to GitHub
-2. Import project into Vercel
-3. Add environment variables
-4. Deploy
-
----
-
-## 📌 Routes
-
-### Public Routes
-
-- `/` → Home
-- `/animals` → All Animals
-- `/login`
-- `/register`
-
-### Private Routes
-
-- `/details/[id]`
-- `/my-profile`
-- `/update-profile`
 
 ---
 
