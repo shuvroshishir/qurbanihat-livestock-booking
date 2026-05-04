@@ -4,9 +4,10 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 const Register = () => {
-
+    const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -20,7 +21,7 @@ const Register = () => {
             image: userData.image,
         });
 
-        console.log({ data, error });
+        // console.log({ data, error });
 
         if (error) {
             toast(`Signup failed: ${error.message}`);
@@ -28,6 +29,7 @@ const Register = () => {
         }
 
         toast("Registration Successful 🎉");
+        router.push('/')
     };
 
     return (

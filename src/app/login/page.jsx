@@ -1,5 +1,6 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import toast from "react-hot-toast";
 import { FaArrowRight, FaUserCircle } from "react-icons/fa";
@@ -7,12 +8,24 @@ import { FaArrowRight, FaUserCircle } from "react-icons/fa";
 const Login = () => {
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
         const userData = Object.fromEntries(formData.entries());
-        console.log(userData);
 
+
+        const { data, error } = await authClient.signIn.email({
+            email: userData.email,
+            password: userData.password,
+            callbackURL: '/',
+        });
+
+        // console.log({ data, error });
+
+        if (error) {
+            toast(`‼️Signup failed: ${error.message}`);
+            return;
+        }
 
         toast("Login Successful ✅");
     };
