@@ -4,6 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import toast from "react-hot-toast";
 import { FaArrowRight, FaUserCircle } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
@@ -28,6 +29,12 @@ const Login = () => {
         }
 
         toast("Login Successful ✅");
+    };
+
+    const googleLogin = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
     };
 
     return (
@@ -89,14 +96,11 @@ const Login = () => {
 
                         {/* Google Button */}
                         <button
+                            onClick={googleLogin}
                             type="button"
-                            className="w-full flex items-center justify-center gap-3 border border-black/10 py-2 rounded-md hover:bg-slate-50 transition"
+                            className="w-full flex items-center justify-center gap-3 border border-black/10 py-2 rounded-md hover:bg-slate-200 transition"
                         >
-                            <img
-                                src="https://www.svgrepo.com/show/475656/google-color.svg"
-                                alt="google"
-                                className="w-5 h-5"
-                            />
+                            <FcGoogle size={20} />
                             <span className="text-sm font-medium text-gray-700">
                                 Continue with Google
                             </span>
