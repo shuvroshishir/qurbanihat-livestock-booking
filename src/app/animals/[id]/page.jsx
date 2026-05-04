@@ -35,7 +35,7 @@ const AnimalDetails = async ({ params }) => {
                                 src={animal.image}
                                 alt={animal.name}
                                 fill
-                                className="object-cover group-hover:scale-105 transition duration-700"
+                                className="object-cover group-hover:scale-105 transition duration-700 animate__animated animate__fadeIn"
                             />
 
                             {/* Gradient Overlay */}
@@ -123,7 +123,7 @@ const AnimalDetails = async ({ params }) => {
                     </div>
 
 
-                    <div className="relative">
+                    <div className="relative animate__animated animate__fadeInRight">
 
                         <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-black/10">
 

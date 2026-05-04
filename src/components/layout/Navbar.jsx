@@ -30,7 +30,7 @@ const Navbar = () => {
         </>
 
     return (
-        <nav className="navbar container mx-auto px-0">
+        <nav className="navbar container mx-auto px-0 animate__animated animate__fadeInDown">
             <div className="navbar-start ">
                 <div className="dropdown ">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden px-0 pr-1">
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <Link href={'/'}>
                     <div className="flex items-center text-2xl">
                         <img src='/images/cow-logo.png' alt="logo" height={50} width={50} />
-                        <p className="text-(--primary) font-bold hidden sm:block">Qurbani<span className="text-(--secondary)">Hat</span></p>
+                        <p className="text-(--primary) font-bold hidden sm:block ">Qurbani<span className="text-(--secondary)">Hat</span></p>
                     </div>
                 </Link>
             </div>

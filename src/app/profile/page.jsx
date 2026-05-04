@@ -17,7 +17,7 @@ const Profile = () => {
     const user = data?.user;
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center px-4">
+        <div className="min-h-screen flex flex-col items-center justify-center px-4 animate__animated animate__fadeIn">
             <div className="text-center mb-8">
                 <h1 className="text-3xl font-bold text-(--secondary)">
                     My Profile

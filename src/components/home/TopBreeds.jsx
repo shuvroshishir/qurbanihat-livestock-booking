@@ -52,7 +52,7 @@ const TopBreeds = () => {
                 <div className="flex flex-wrap justify-center md:justify-between gap-8">
 
                     {breeds.map((breed, index) => (
-                        <div key={index} className="text-center group">
+                        <div key={index} className="text-center group ">
 
                             {/* Circle Image */}
                             <div className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-4 border-white shadow-md group-hover:scale-105 transition">

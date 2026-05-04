@@ -15,7 +15,6 @@ const UpdateProfile = () => {
 
         const name = e.target.name.value;
         const image = e.target.image.value;
-        console.log({ name, image });
 
 
         await authClient.updateUser({
@@ -27,7 +26,7 @@ const UpdateProfile = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 p-4">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 p-4 animate__animated animate__fadeIn ">
 
             <div className="text-center mb-8 max-w-md">
                 <h1 className="text-3xl font-bold text-[#064E3B]">

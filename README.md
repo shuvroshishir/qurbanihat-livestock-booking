@@ -14,6 +14,12 @@ The platform focuses on a clean UI, smooth user experience, and essential bookin
 
 ---
 
+## 🌐 GitHub Repo
+
+🔗 https://github.com/shuvroshishir/qurbanihat-livestock-booking
+
+---
+
 ## 🎯 Purpose
 
 This project was built as part of Assignment 8 to demonstrate:
@@ -93,47 +99,26 @@ This project was built as part of Assignment 8 to demonstrate:
 
 ### Authentication & Backend
 
-- Firebase Authentication
+- BetterAuth Authentication
+- MongoDB
 
 ### Packages
 
 - react-hot-toast
-- animate.css (or Lottie)
-
----
-
-## ⚠️ Important Notes
-
-- Booking data is not stored (as per requirements)
-- No database or local storage used
-- Ensure environment variables are properly configured
-
----
-
-## 🧠 Challenges Faced
-
-- Implementing protected routes in Next.js
-- Managing Firebase authentication state
-- Creating a clean and responsive UI
-- Handling form validation and user feedback
-
----
-
-## ✨ Future Improvements
-
-- Add real database (MongoDB / Firebase Firestore)
-- Payment integration
-- Advanced filtering system
-- Admin dashboard
+- react-icons
+- react-spinners
+- Hero UI
+- Daisy UI
+- animate.css
 
 ---
 
 ## 👨‍💻 Author
 
 **Shishir Karmokar**
-🔗 LinkedIn: https://www.linkedin.com/in/shishirkarmokar/
-📧 Email: [shuvroshishir.dev@gmail.com](mailto:shuvroshishir.dev@gmail.com)
-💻 GitHub: https://github.com/shuvroshishir
+🔗 LinkedIn: https://www.linkedin.com/in/shishirkarmokar/ <br>
+📧 Email: [shuvroshishir.dev@gmail.com](mailto:shuvroshishir.dev@gmail.com) <br>
+💻 GitHub: https://github.com/shuvroshishir <br>
 
 ---
 

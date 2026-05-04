@@ -3,13 +3,13 @@ import { FaShoppingBag, FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="Hero px-4 py-5 sm:px-12  sm:py-20 bg-[#FAF3E0]">
+        <section className="Hero px-4 py-5 sm:px-12  sm:py-20 bg-[#FAF3E0] animate__animated animate__fadeIn">
             <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">
 
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
                     <p className="badge badge-warning rounded-full"> Eid-ul-Adha Collection 2026</p>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-(--primary)">
+                    <h1 className="animate__animated animate__fadeIn text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-(--primary)">
                         Celebrate Your{" "}
                         <span className="text-(--secondary)">Qurbani</span> with Excellence
                     </h1>

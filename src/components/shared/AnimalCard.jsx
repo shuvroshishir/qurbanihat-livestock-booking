@@ -4,7 +4,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 const AnimalCard = ({ animal }) => {
     return (
-        <div className="animalCard bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden hover:-translate-y-1 transition-all ease-in-out duration-200">
+        <div className="animalCard animate__animated animate__fadeInUp  bg-white rounded-xl shadow-md hover:shadow-xl overflow-hidden hover:-translate-y-1 transition-all ease-in-out duration-200">
 
             {/* Image */}
             <div className="relative h-56">
@@ -40,7 +40,7 @@ const AnimalCard = ({ animal }) => {
                 <Link href={`/animals/${animal.id}`}>
                     <button
 
-                        className="mt-4 w-full py-2 border border-black/10 rounded-md text-(--secondary) hover:bg-(--secondary) hover:text-white transition">
+                        className="mt-4 w-full py-2 border border-black/10 rounded-md text-(--secondary) hover:bg-(--secondary) hover:text-white transition ">
                         View Details
                     </button>
                 </Link>
